@@ -57,6 +57,7 @@ ul,li{
     
   }
   
+
   .col-1{
     width: calc(100% / 12 * 1);
   }
@@ -72,6 +73,7 @@ ul,li{
   .col-4{
     width: calc(100% / 12 * 4);
   }
+
   
   .col-5{
     width: calc(100% / 12 * 5);
@@ -157,13 +159,18 @@ header{
 .card-text{
     padding: 1rem;
 }
+
+.card-text ul{
+    flex-direction: column;
+    padding-top: 1rem;
+
+}
 /* #endregion tiramisu */
 
 
 /* #region socials */
 
 .social-list{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -175,9 +182,14 @@ li .social-text{
     background-color: var(--gial-lighter);
     margin-top: 2rem;
     text-align: center;
+    vertical-align: middle;
     padding: 0.20rem 1rem;
     border-radius: 1rem;
     box-shadow: 3px 5px 8px 3px lightgray;
+    span{
+        font-size: 10px;
+        font-weight: 600;
+    }
 
 }
 
@@ -253,6 +265,12 @@ li .social-text{
 
     
   }
+
+  .col-4-md{
+    width: calc(100% / 12 * 4);
+    
+  }
+
     header{
         justify-content: flex-start;
         
@@ -262,19 +280,13 @@ li .social-text{
         display: inline-block;
     }
 
-    .col-card-text ul{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    /* ul li{
-        margin-right: 2rem;
-    } */
+    .card-text ul{
+        padding: 2rem;
+        flex-direction: row;
+   }
     
-    .social-list{
-        justify-content: space-around;
-    }
+
+
     .social-btn{
         padding: 0.20rem 2.88rem;
        
@@ -306,17 +318,22 @@ li .social-text{
         flex-wrap: nowrap;
     }
 
-    .col-card-img{
+    .col-8-lg{
       width: calc(100% / 12 * 8);
     }
 
-    .col-card-text{
-     width: calc(100% / 12 * 2);
+    .col-4-lg{
+     width: calc(100% / 12 * 4);
 
     }
 
+    
+
+
+
      li .social-text{
         display: inline-block;
+
     }
     .social-btn{
         padding: 0 1rem;
