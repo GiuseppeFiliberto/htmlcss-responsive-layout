@@ -24,6 +24,13 @@ body{
         border: 1px dashed black;
     }
 }
+img{
+    width: 100%;
+}
+ul,li{
+    list-style: none;
+    line-height: 2.5rem;
+}
 /* layout */
 
   .container{
@@ -120,6 +127,13 @@ header{
 
 .title_text_2{
     display: none;
+}
+
+.col-card-img, .col-card-text{
+    width: 100%;
+    h3{
+        margin: 1rem 0rem;
+    }
 }
 
 /* media queries */
