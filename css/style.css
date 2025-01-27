@@ -239,7 +239,7 @@ li .social-text{
 
  .post img{
     width: 300px;
-    text-align: center;
+    margin-left: 17%;
  }
 
  .post p{
@@ -331,6 +331,7 @@ li .social-text{
 
     .post img{
         float: left;
+        margin: 0;
     }
 
 
