@@ -26,7 +26,7 @@ body{
 }
 
 img{
-   max-width: 100%;
+  width: 100%;
 }
 
 ul,li{
@@ -172,6 +172,11 @@ li .social-text{
 
 /* #endregion socials */
 
+ .banner-img{    
+
+     display: none;
+ }
+
 /* media queries */
 
 @media screen and (min-width:768px){
@@ -210,6 +215,12 @@ li .social-text{
         padding: 0.20rem 2.88rem;
        
     }
+
+    .banner-img{
+        height: 84px;
+        display: block;
+        margin-top: 1rem;
+    }
 }
 
 
@@ -241,4 +252,7 @@ li .social-text{
         padding: 0 1rem;
     }
 
+    .banner-img{
+        height: 126px;
+    }
 }
