@@ -13,12 +13,19 @@ body{
 
     --gial-primary:#7c69a4;
     --gial-secondary: #ff9614;
+    --gial-light: #f6f5f3;
+    --gial-lighter: #ffff;
 }
 
 
 /* layout */
+  .container{
+    width: 95%;
+    max-width: 480px;
+    margin: auto;
+  }
 
-w  
+
   .row{
     display: flex;
     flex-wrap: wrap;
@@ -76,3 +83,13 @@ w
   [class^="col"]{
       padding: 1rem;
     }
+
+/* #region header */
+
+.logo{
+    font-family: "Nerko One", serif;
+    color: var(--gial-secondary);
+    text-shadow: 1px 1px grey;
+    padding: 1rem;
+
+}
