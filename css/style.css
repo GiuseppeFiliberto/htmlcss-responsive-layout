@@ -149,6 +149,7 @@ header{
 
 /* #endregion tiramisu */
 
+
 /* #region socials */
 
 .social-list{
@@ -175,6 +176,29 @@ li .social-text{
  .banner-img{    
 
      display: none;
+ }
+
+/* #region post */
+ 
+ .line{
+    border: 1px solid var(--gial-secondary);
+    width: 65px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+
+ .presentation h2{
+    padding-top: 2rem;
+    font-weight: 450;
+ }
+
+ .post img{
+    width: 300px;
+    text-align: center;
+ }
+
+ .post p{
+    line-height: 1.50rem;
  }
 
 /* media queries */
@@ -221,6 +245,12 @@ li .social-text{
         display: block;
         margin-top: 1rem;
     }
+
+    .post img{
+        float: left;
+    }
+
+
 }
 
 
