@@ -277,7 +277,23 @@ li .social-text{
      flex-wrap: wrap;
      gap: 0.50rem;
 }
+
+
 /* media queries */
+
+@media screen and (min-width:576px){
+
+    .col-2-md{
+        width: calc(100% / 12 * 2);
+      }
+
+      .post img{
+        float: left;
+        margin: 0;
+    }
+}
+/* /bonus */
+
 
 @media screen and (min-width:768px){
 
@@ -361,17 +377,19 @@ li .social-text{
      width: calc(100% / 12 * 4);
 
     }
-
+    .title-text{
+        font-size: 1.7rem;
+    }
     .card-text ul{
         flex-direction: column;
+        padding: 0;
+        margin-top: 1rem;
     }
-
-    
-
-
 
      li .social-text{
         display: inline-block;
+        vertical-align: middle;
+        font-weight: 800;
 
     }
     .social-btn{
@@ -382,9 +400,14 @@ li .social-text{
         height: 126px;
     }
 
+    .post p{
+        line-height: 1.5rem;
+    }
+
      footer{
         padding: 1rem;
      }
+
      .foot-content{
     display: flex;
     justify-content: space-between;
