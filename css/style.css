@@ -24,9 +24,11 @@ body{
         border: 1px dashed black;
     }
 }
+
 img{
-    width: 100%;
+   max-width: 100%;
 }
+
 ul,li{
     list-style: none;
     line-height: 2.5rem;
@@ -98,6 +100,7 @@ ul,li{
       padding: 1rem;
     }
 
+
 /* #region header */
 header{
     display: flex;
@@ -129,13 +132,41 @@ header{
     display: none;
 }
 
+.card-container{
+    background-color: var(--gial-lighter);
+    box-shadow: -2px 4px 20px 0px #888888;
+    display: flex;
+}
+
 .col-card-img, .col-card-text{
     width: 100%;
-    h3{
-        margin: 1rem 0rem;
+}
+
+.card-text{
+    padding: 2rem;
+  
+}
+
+/* #endregion tiramisu */
+
+/* #region socials */
+
+.social-list{
+    display: flex;
+
+    li .social-text{
+        display: none;
     }
 }
 
+.social-btn{
+    background-color: var(--gial-lighter);
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.20rem 1rem;
+    border-radius: 1rem;
+    
+}
 /* media queries */
 
 @media screen and (min-width:768px){
@@ -156,6 +187,39 @@ header{
     .title_text_2{
         display: inline-block;
     }
+
+    .col-card-text ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    ul li{
+        margin-right: 2rem;
+    }
     
 }
 
+
+
+@media screen and (min-width:992px){
+
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .col-card-img{
+      width: calc(100% / 12 * 8);
+    }
+
+    .col-card-text{
+     width: calc(100% / 12 * 2);
+
+    }
+
+}
