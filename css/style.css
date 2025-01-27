@@ -54,7 +54,7 @@ ul,li{
   .row{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1rem;
+    
   }
   
   .col-1{
@@ -115,7 +115,7 @@ ul,li{
 
   
   [class^="col"]{
-      padding: 1rem;
+      padding: 0rem, 1rem;
     }
 
 
@@ -221,7 +221,6 @@ li .social-text{
     padding: 2rem;
 
  }
-
 
 
 .left-up{
@@ -339,7 +338,4 @@ li .social-text{
         text-align: left;
     }
 
-    .right ul{
-        gap: 1rem;
-    }
 }
