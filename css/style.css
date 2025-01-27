@@ -37,6 +37,11 @@ ul,li{
     list-style: none;
     line-height: 2.5rem;
 }
+
+.bgc-lighter{
+    background-color: var(--gial-lighter);
+}
+
 /* layout */
 
   .container{
@@ -99,6 +104,15 @@ ul,li{
   .col-12{
     width: 100%;
   }
+
+  .col-card-img{
+    width: 100%;
+    }
+
+    .col-card-text{
+    width: 100%;
+    }
+
   
   [class^="col"]{
       padding: 1rem;
@@ -142,14 +156,6 @@ header{
     display: flex;
 }
 
-.col-card-img, .col-card-text{
-    width: 100%;
-}
-
-.card-text{
-    padding: 2rem;
-  
-}
 
 /* #endregion tiramisu */
 
@@ -216,18 +222,18 @@ li .social-text{
 
  }
 
- .footer-content{
-    display: flex;
-    justify-content: center;
-    }
 
 
 .left-up{
         margin-bottom: 1rem;
         text-align: center;
     }
-.left-down span{
+.left-down{
+    text-align: center;
+    
+    span{
     font-size: 0.80rem;
+    }
 }
 
 .right ul{
@@ -263,9 +269,9 @@ li .social-text{
         flex-wrap: wrap;
     }
 
-    ul li{
+    /* ul li{
         margin-right: 2rem;
-    }
+    } */
     
     .social-list{
         justify-content: space-around;
@@ -319,5 +325,20 @@ li .social-text{
 
     .banner-img{
         height: 126px;
+    }
+     footer{
+        padding: 1rem;
+     }
+     .foot-content{
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .left-up, .left-down{
+        text-align: left;
+    }
+
+    .right ul{
+        gap: 1rem;
     }
 }
