@@ -7,11 +7,13 @@
 body{
 
     font-family: "Montserrat", serif;
+    background-color: var(--gial-light);
 }
 
 :root{
 
     --gial-primary:#7c69a4;
+    --gial-primary-dark: #4e3969;
     --gial-secondary: #ff9614;
     --gial-light: #f6f5f3;
     --gial-lighter: #ffff;
@@ -23,10 +25,11 @@ body{
     }
 }
 /* layout */
+
   .container{
     width: 95%;
-    max-width: 480px;
-    margin: auto;
+    margin: 1rem;
+    
   }
 
 
@@ -92,6 +95,7 @@ body{
 header{
     display: flex;
     justify-content: center;
+    background-color: var(--gial-lighter);
 }
 .logo{
     font-family: "Nerko One", serif;
@@ -101,14 +105,42 @@ header{
     padding: 1rem;
 
 }
+/* #endregion header */
+
+/* #region tiramisu */
+
+.title_text{
+    color: var(--gial-primary-dark);
+    margin-top: 0.50rem;
+    .title_text_1{
+        display: inline-block;
+    }
+}
+
+
+.title_text_2{
+    display: none;
+}
 
 /* media queries */
 
 @media screen and (min-width:768px){
 
+.container{
+    width: 95%;
+    /* max-width: 768px; */
+    margin: auto;
+    padding: 2rem;
+
+    
+  }
     header{
         justify-content: flex-start;
         
+    }
+
+    .title_text_2{
+        display: inline-block;
     }
     
 }
