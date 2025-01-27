@@ -153,10 +153,11 @@ header{
 
 .social-list{
     display: flex;
+    justify-content: space-between;
+}
 
-    li .social-text{
-        display: none;
-    }
+li .social-text{
+    display: none;
 }
 
 .social-btn{
@@ -165,8 +166,12 @@ header{
     text-align: center;
     padding: 0.20rem 1rem;
     border-radius: 1rem;
-    
+    box-shadow: 3px 5px 8px 3px lightgray;
+
 }
+
+/* #endregion socials */
+
 /* media queries */
 
 @media screen and (min-width:768px){
@@ -198,6 +203,13 @@ header{
         margin-right: 2rem;
     }
     
+    .social-list{
+        justify-content: space-around;
+    }
+    .social-btn{
+        padding: 0.20rem 2.88rem;
+       
+    }
 }
 
 
@@ -220,6 +232,13 @@ header{
     .col-card-text{
      width: calc(100% / 12 * 2);
 
+    }
+
+     li .social-text{
+        display: inline-block;
+    }
+    .social-btn{
+        padding: 0 1rem;
     }
 
 }
