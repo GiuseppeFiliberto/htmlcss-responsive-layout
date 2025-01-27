@@ -17,13 +17,15 @@ body{
     --gial-secondary: #ff9614;
     --gial-light: #f6f5f3;
     --gial-lighter: #ffff;
+    --gial-dark: black;
+    --gial-fb: #1a77f3;
+    --gial-tw: #009eff;
+    --gial-ig: #dc43a6;
+    --gial-pt: #e62223;
 }
 
-.debug{
-    *{
-        border: 1px dashed black;
-    }
-}
+
+
 
 img{
   width: 100%;
@@ -42,6 +44,27 @@ ul,li{
     background-color: var(--gial-lighter);
 }
 
+.c-fb{
+    color: var(--gial-fb);
+}
+.c-tw{
+    color: var(--gial-tw)
+}
+.c-ig{
+    color: var(--gial-ig);
+}
+.c-pt{
+    color: var(--gial-pt);
+}
+.c-dk{
+    color: var(--gial-dark);
+}
+
+.debug{
+    *{
+        border: 1px dashed black;
+    }
+}
 /* layout */
 
   .container{
@@ -175,6 +198,7 @@ header{
 
 li .social-text{
     display: none;
+    color: var(--gial-dark);
 }
 
 .social-btn{
