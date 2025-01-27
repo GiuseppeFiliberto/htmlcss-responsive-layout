@@ -150,13 +150,13 @@ header{
     display: none;
 }
 
-.card-container{
+.card-content{
     background-color: var(--gial-lighter);
     box-shadow: -2px 4px 20px 0px #888888;
-    display: flex;
 }
-
-
+.card-text{
+    padding: 1rem;
+}
 /* #endregion tiramisu */
 
 
@@ -326,6 +326,7 @@ li .social-text{
     .banner-img{
         height: 126px;
     }
+
      footer{
         padding: 1rem;
      }
