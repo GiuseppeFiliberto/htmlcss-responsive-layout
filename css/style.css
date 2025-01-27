@@ -17,7 +17,11 @@ body{
     --gial-lighter: #ffff;
 }
 
-
+.debug{
+    *{
+        border: 1px dashed black;
+    }
+}
 /* layout */
   .container{
     width: 95%;
@@ -85,11 +89,15 @@ body{
     }
 
 /* #region header */
-
+header{
+    display: flex;
+    justify-content: center;
+}
 .logo{
     font-family: "Nerko One", serif;
     color: var(--gial-secondary);
     text-shadow: 1px 1px grey;
+    font-size: 1.5rem;
     padding: 1rem;
 
 }
