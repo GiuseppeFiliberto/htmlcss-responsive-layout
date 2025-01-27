@@ -200,7 +200,22 @@ li .social-text{
  .post p{
     line-height: 1.50rem;
  }
+/* #endregion post */
 
+/* #region footer */
+
+
+ footer{
+    background-color: var(--gial-primary);
+    color: var(--gial-lighter);
+    padding: 2rem;
+
+ }
+
+ .footer-content{
+    display: flex;
+    }
+ 
 /* media queries */
 
 @media screen and (min-width:768px){
